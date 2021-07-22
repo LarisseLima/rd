@@ -4,6 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Rd Station</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
@@ -17,7 +23,7 @@
           <a class="header_nav_link" href="#">Menu4</a>
           <a class="header_nav_link" href="#">Menu5</a>
           <a class="header_nav_link" href="#">Button</a>
-          <a class="header_nav_link" href="#">Button</a>
+          <a class="header_nav_link" href="#" data-toggle="modal" data-target="#modal-contato">Button</a>
 
           <!-- <a
             class="header_nav_link header_nav_link-app"
@@ -28,23 +34,72 @@
       </div>
     </header>
     <main>
-      <section class="section_video">
+      <section class="section_modal">
         <div class="container">
-          <div class="section_video_about">
-            <h2 class="section_video_about_title">
-              Entenda melhor como o RD Station Marketing funciona na prática
+          <div class="section_modal_info">
+            <h2 class="section_modal_title">
+              Gere mais <span>oportunidades</span> 
             </h2>
-            <button class="section_video_button">
-              assista a demonstração ▶
-            </button>
+            <h2 class="section_modal_title">
+               para seu negócio
+            </h2>
+            <p class="section_modal_paragra">
+              O RD Station Marketing é um software para sua empresa fazer
+              campanhas melhores, nutrir Leads, gerar oportunidades comerciais
+              qualificadas e alcançar mais resultados.
+            </p>
           </div>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/lGCesaaLi4s?controls=0"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+          <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <dialog class="modal-content">
+              <header class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </header>
+              <article class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="informe seu nome">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="informe seu e-mail">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="deixe sua mensagem"
+                      rows="3"></textarea>
+                  </div>
+                </form>
+              </article>
+              <footer class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-cor-especial">Enviar</button>
+              </footer>
+            </dialog>
+          </div>
+        </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_rd">
+        <div class="container">
+          <div class="section_rd_info">
+            <h2 class="section_rd_title">
+              Gere mais <span>oportunidades</span> 
+            </h2>
+            <h2 class="section_rd_title">
+               para seu negócio
+            </h2>
+            <p class="section_rd_paragra">
+              O RD Station Marketing é um software para sua empresa fazer
+              campanhas melhores, nutrir Leads, gerar oportunidades comerciais
+              qualificadas e alcançar mais resultados.
+            </p>
+          </div>        
+        </div>
+          </div>
         </div>
       </section>
       <section class="section_video">
@@ -67,46 +122,32 @@
         </div>
       </section>
     </main>
-    <footer class="rodapePrincipal">
-      <section class="rodapePrincipal-patrocinadores">
+    <footer class="footer">
+      <section class="footer-patrocinadores">
         <div class="container">
-          <ul class="rodapePrincipal-patrocinadores-list">
+          <ul class="footer-patrocinadores-list">
             <li>
               <a
                 class="
-                  rodapePrincipal-patrocinadores-list-link
+                  footer-patrocinadores-list-link
                   patrocinadores-list-link-alura
                 "
                 href="#"
               >
-                <img src="img/logos/alura.svg" alt="Logo da Alura" />
+                <img src="assets/logo2.svg" alt="Logo RD" />
               </a>
             </li>
-            <li>
-              <a
-                class="
-                  rodapePrincipal-patrocinadores-list-link
-                  patrocinadores-list-link-caelum
-                "
-                href="#"
-              >
-                <img src="img/logos/caelum.svg" alt="Logo da Caelum" />
-              </a>
-            </li>
-            <li>
-              <a
-                class="
-                  rodapePrincipal-patrocinadores-list-link
-                  patrocinadores-list-link-casaDoCodigo
-                "
-                href="#"
-              >
-                <img src="img/logos/cdc.svg" alt="Logo da Casa do Código" />
-              </a>
-            </li>
+          
+            
           </ul>
         </div>
       </section>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   </body>
 </html>
