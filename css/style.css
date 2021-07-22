@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800&display=swap");
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  width: 94%;
+  margin: 0 auto;
+}
+.container img {
+  margin-bottom: 10px;
+  width: 20%;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  background-color: var(--white);
+  padding: 10px 0;
+}
+
+.header_nav {
+  display: flex;
+}
+
+.header_nav_link {
+  padding: 25px;
+  margin-bottom: 10px;
+  color: var(--black);
+  text-decoration: none;
+  transition: 0.5s;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+}
+
+.header_nav_link:hover {
+  color: #fff;
+  background-color: var(--blueHover);
+}
+
+.conteudoPrincipal {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.subtitulo {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.conteudoPrincipal-cursos-link {
+  height: 100px;
+  text-align: center;
+  margin: 1%;
+  transition: 0.3s;
+  position: relative;
+}
+
+.conteudoPrincipal-cursos-link a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.conteudoPrincipal-cursos-link:hover {
+  box-shadow: 4px 4px 4px #ccc;
+}
+
+.conteudoPrincipal-cursos-link a:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 10px auto;
+}
+
+.rodapePrincipal {
+  background-color: #324c64;
+  padding-top: 20px;
+}
+
+.rodapePrincipal .subtitulo {
+  color: #fff;
+}
+
+.rodapePrincipal-navMap-link {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.rodapePrincipal-navMap-link {
+  font-size: 0.9em;
+}
+
+.navmap-list-title {
+  font-weight: 700;
+  font-size: 1.3em;
+  margin: 0.9em 0;
+  padding-left: 0.3em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+.navmap-list-title + .rodapePrincipal-navMap-link {
+  margin-top: 0;
+}
+
+.section_video {
+  background-color: var(--lighterGray);
+  padding: 25px 0;
+}
+
+.section_video-video {
+  max-width: 100%;
+  flex-grow: 1;
+}
+
+.section_video .container {
+  color: var(--black);
+  display: flex;
+  justify-content: space-between;
+}
+
+.section_video_about {
+  font-size: 1.3em;
+  line-height: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 10;
+}
+
+.section_video_about_title {
+  /* font-size: 1.2em; */
+  font-weight: bolder;
+  width: 13em;
+  padding-right: 108px;
+  /* background: gold; */
+  /* word-wrap: break-word; */
+  gap: 2px;
+  font-family: "Nunito", sans-serif;
+  font-size: 32px;
+}
+
+.section_video_button {
+  border-radius: 8px var(--black);
+  /* background-color: var(--white); */
+  display: block;
+  color: var(--black);
+  height: 50px;
+  width: 350px;
+  font-size: 0.8em;
+  outline: none;
+}
+.section_video_button:hover {
+  color: #fff;
+  background-color: var(--blueHover);
+}
+
+/* .rodapePrincipal-contatoForm-legend {
+  margin-bottom: 10px;
+} */
+
+/* @media (min-width: 769px) {
+  .container {
+    width: 85%;
+  }
+
+  .subtitulo {
+    text-align: left;
+  }
+
+  .header_nav_link {
+    border-radius: 5px;
+  }
+
+  .header_nav_link:hover {
+    color: #fff;
+    background-color: var(--bueHover);
+  }
+
+  .header-titulo {
+    margin: 0;
+  }
+
+  .header_nav {
+    width: auto;
+  }
+
+  .header_nav_link {
+    width: auto;
+    margin: 0 0 0 10px;
+  }
+
+  .rodapePrincipal-contatoForm {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .conteudoPrincipal-cursos-link:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .conteudoPrincipal-cursos-link:nth-child(3n + 1) {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .conteudoPrincipal-cursos-link {
+    margin: 1.333%;
+  }
+
+  .conteudoPrincipal-cursos-link:nth-child(3n) {
+    margin-right: 1.33%;
+  }
+
+  .conteudoPrincipal-cursos-link:nth-child(3n + 1) {
+    margin-left: 1.333%;
+  }
+
+  .conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .conteudoPrincipal-cursos-link:nth-child(4n + 1) {
+    margin-left: 0;
+  }
+
+  .section_video_about {
+    margin-left: 1.5em;
+  }
+} */
