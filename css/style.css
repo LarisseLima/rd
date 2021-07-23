@@ -116,38 +116,55 @@ body {
   font-weight: 400;
 }
 
-.footer {
-  background-color: var(--blueAscent);
-  padding-top: 20px;
+.section_photo {
+  /* background-color: var(--lighterGray); */
+  padding: 25px 0;
 }
 
-.footer .subtitulo {
-  color: #fff;
+.section_photo .container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.footer-navMap-link {
-  text-decoration: none;
-  color: #fff;
-  margin-top: 10px;
+.section_img img {
+  height: 500px;
+  width: 465px;
+  border-radius: 0px;
+}
+/* .section_img_about {
+  line-height: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+} */
+
+.section_img_about_title {
+  font-weight: 900;
+  width: 15em;
+  font-family: "Nunito", sans-serif;
+  font-size: 32px;
 }
 
-.footer-navMap-link {
-  font-size: 0.9em;
+.section_img_about_subtitle {
+  font-weight: 400;
+  width: 15em;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
 }
 
-.navmap-list-title {
-  font-weight: 700;
-  font-size: 1.3em;
-  margin: 0.9em 0;
-  padding-left: 0.3em;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+.section_list_li {
+  font-weight: 400;
+  width: 490px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
 }
 
-.navmap-list-title + .footer-navMap-link {
-  margin-top: 0;
+.section_list_li img {
+  height: 13px;
+  width: 18px;
+  left: 3px;
+  border-radius: 0px;
 }
-
 .section_video {
   background-color: var(--lighterGray);
   padding: 25px 0;
@@ -188,9 +205,43 @@ body {
   background-color: var(--blueHover);
 }
 
-/* .footer-contatoForm-legend {
-  margin-bottom: 10px;
-} */
+.footer {
+  background-color: var(--blueAscent);
+  padding-top: 20px;
+}
+
+.footer_section {
+  padding-left: 108px;
+  width: 840px;
+  height: 81px;
+}
+.footer_section_img img {
+  width: 25%;
+  height: 32px;
+}
+
+.footer_section_icons img {
+  float: left;
+  align-items: flex-end;
+  margin-right: 20px;
+  font-size: 20px;
+  /* margin-top: 10px; */
+}
+
+.footer_section_icons ul,
+li,
+a {
+  display: inline-block;
+  list-style: none;
+}
+.footer_section_row {
+  margin-top: 24px;
+  width: 1224px;
+  height: 0px;
+  left: 108px;
+  top: 4618px;
+  border: 1px solid var(--white);
+}
 
 /* @media (min-width: 769px) {
   .container {

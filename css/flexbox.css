@@ -1,30 +1,14 @@
-.footer-patrocinadores .container {
+.footer_section .container {
   display: flex;
   justify-content: space-between;
 }
 
-.footer-patrocinadores-list {
+.footer_section_list {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 70%;
   margin-right: 5%;
-}
-
-.footer-contatoForm {
-  width: 25%;
-}
-
-.footer-contatoForm-fieldset {
-  display: flex;
-}
-
-.footer-navMap-list {
-  display: flex;
-  /*flex-direction: column;
-	flex-wrap: wrap;*/
-  flex-flow: column wrap;
-  height: 250px;
 }
 
 /*parte mobile*/
@@ -51,12 +35,12 @@
     height: auto;
   }
 
-  .footer-patrocinadores .container {
+  .footer_section .container {
     flex-direction: column;
     align-items: center;
   }
 
-  .footer-patrocinadores-list {
+  .footer_section_list {
     margin: 0;
     width: 100%;
   }
