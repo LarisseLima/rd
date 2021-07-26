@@ -51,11 +51,9 @@ color: var(--blueHover)
   justify-content: space-between;
 }
 
-
 .header_nav {
   display: flex;
 }
-
 
 .header_nav button {
   margin-top: 15px;
@@ -94,10 +92,7 @@ color: var(--blueHover)
   padding-top: 350px;
 }
 
-.section_modal_paragraph
- {
-  /* width: 600px; */
-  /* padding-right: 108px; */
+.section_modal_paragraph{
   padding-top: 40px;
   font-family: "Nunito", sans-serif;
   font-size: 20px;
@@ -412,19 +407,33 @@ form button:hover{
   justify-content: space-between;
 }
 
-.section_logos {
-  padding: 25px 0;
-}
-
 .section_video .container {
   color: var(--black);
   display: flex;
   justify-content: space-between;
 }
 
+.section_video_about_title {
+  padding-top: 66px;
+}
+
+
+.section_logos {
+  background-color: var(--lighterGray);
+  padding: 25px 0;
+}
+.section_logos_title{
+  padding-top: 66px;
+}
+.section_logos .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 .section_logos_img img {
+  padding-top: 105px;
   align-items: flex-end;
-  width: 455px;
 }
 
 .footer {
@@ -435,7 +444,6 @@ form button:hover{
 .footer_section {
   padding-left: 108px;
   width: 840px;
-  /* height: 81px; */
 }
 .footer_section_img img {
   width: 25%;
@@ -454,12 +462,28 @@ li,
 a {
   display: inline-block;
   list-style: none;
+  align-items: center;
+  justify-content: center;
 }
+.footer_section_icons li:hover{
+  transform: translateY(-5px);
+}
+/* .footer_section_icons li{
+  position: relative;
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 15px;
+  align-items: center;
+  display: flex;
+} */
 
 .footer_section_info_h3{
+  padding-top: 5px;
   font-family: "Nunito", sans-serif;
   font-size: 14px;
+  text-align: center;
 }
+
 .footer_section_info_h3 span{
   font-weight: bolder;
 }
