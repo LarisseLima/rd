@@ -16,19 +16,19 @@
   <body>
     <header class="header">
       <div class="container">
-        <img src="assets/logo.svg" alt="Logo RD" />
+        <img class="container_logo" src="assets/logo.svg" alt="Logo RD" />
         <nav class="header_nav">
-          <a class="header_nav_link" href="#">Menu1</a>
-          <a class="header_nav_link" href="#">Menu2</a>
-          <a class="header_nav_link" href="#">Menu3</a>
-          <a class="header_nav_link" href="#">Menu4</a>
-          <a class="header_nav_link" href="#">Menu5</a>
-          <div class="header_nav_button">
-            <a href="#" > <img src="assets/button-nav1.svg" alt="Botão"></a>
-           </div>
-           <div class="header_nav_button">
-            <a href="#" data-toggle="modal" data-target="#modal-contato"> <img src="assets/button-nav2.svg" alt="Botão"></a>
-           </div>
+          <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+            <li>Menu 4</li>
+            <li>Menu 5</li>
+          </ul>
+          <div>
+            <button className="btn-primary">button </button>
+            <button>button</button>
+          </div>
         </nav>
       </div>
     </header>
@@ -37,72 +37,97 @@
         <div class="container">
           <div class="section_modal_info">
             <h2 class="section_modal_title">
-              Gere mais <span>oportunidades</span> 
+              Gere mais <span>oportunidades</span>  para seu negócio
             </h2>
-            <h2 class="section_modal_title">
-               para seu negócio
-            </h2>
+           
             <p class="section_modal_paragraph">
               O RD Station Marketing é um software para sua empresa fazer
               campanhas melhores, nutrir Leads, gerar oportunidades comerciais
               qualificadas e alcançar mais resultados.
             </p>
           </div>
-          
-          <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <dialog class="modal-content">
-              <header class="modal-header">
-                <h3 class="modal-title" id="exampleModalLabel">Comece seus 10 dias de teste grátis do RD Station Marketing!</h3>
-                <h5 class="modal-subtitle" id="exampleModalLabel">Não precisa cadastrar cartão de crédito. 😉</h5>
-               
-              </header>
-              <article class="modal-body">
-                <form>
-                  <div class="form-group">
-                    <label for="name">Diga, qual seu nome?</label>
-                    <input type="text" class="form-control" id="data1" placeholder="Insira seu nome">
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Seu email de trabalho</label>
-                    <input type="email" class="form-control" id="data2" placeholder="Insira seu e-mail">
-                  </div>
-                  <div class="form-group">
-                    <label for="phone">Seu telefone</label>
-                    <input type="tel" class="form-control" id="data3" placeholder="Insira seu número de telefone com DDD">
-                  </div>
-                  <div class="form-group">
-                    <label for="job">Seu cargo de ocupação</label>
-                    <input type="name" class="form-control" id="data4" placeholder="Insira seu e-mail" >
-                  </div>
-                  <div class="form-group">
-                    <label for="password">Crie uma senha</label>
-                    <input type="password" class="form-control" id="data5" placeholder="">
-                  </div>
-                  <div class="form-group">
-                    <label for="password">Confirme sua senha</label>
-                    <input type="password" class="form-control" id="data6" placeholder="Insira seu e-mail">
-                  </div>
-                  <div class="form-group">
-                    <label for="site">Qual o site da sua empresa?</label>
-                    <select name="Meu site é" id=""></select>
-                    <input type="password" class="form-control" id="data7" placeholder="">
-                    <select name="Ainda não tenho site" id=""></select>
-                  </div>
-                  <h1>Ao criar minha conta estou de acordo com os termos de uso do software e política de privacidade.
-                    Ao preencher o formulário, concordo em receber comunicações de acordo com meus interesses.
-                    *Você pode alterar suas permissões de comunicação a qualquer tempo.</h1>
-                </form>
-              </article>
-              <footer class="modal-footer">
-                <div class="section_mk_button">
-                  <a href="https://app.rdstation.com.br/signup" target="blank"> <img src="assets/button-yellow.svg" alt="Botão criar conta"></a>
-                 </div>
-              </footer>
-            </dialog>
-          </div>
-        </div>
+          <form method="post" action="https://app.rdstation.com.br/signup">
+            <header>
+              <h4>Comece seus 10 dias de teste grátis do RD Station Marketing!</h4>
+              <h5>Não precisa cadastrar cartão de crédito. 😉</h5>
+            </header>
+            <label >Digite seu nome</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Insira seu nome"
+            />
+            <label >Seu email de trabalho</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Insira seu e-mail"
+            />
+            <label >Seu telefone</label>
+            <input
+              type="tel"
+              name="telefone"
+              placeholder="Insira seu número de telefone com DDD"
+            />
+    
+            <label >Seu cargo de ocupação</label>
+            <select
+              name="cargo"
+              placeholder="Age..."
+            >
+              <option value="ceo">Sócio(a) / CEO / Proprietário(a</option>
+              <option value="diretorVendas">Diretor(a) de Vendas</option>
+              <option value="diretorMarketing">Diretor(a) de Marketing</option>
+              <option value="diretorOA">Diretor(a) Outras Áreas</option>
+              <option value="gerenteVendas">"Gerente de Vendas</option>
+              <option value="supervisorMarketing">
+                Coordenador(a)/Supervisor(a) de Marketing
+              </option>
+              <option value="supervisorVendas">Coordenador(a)/Supervisor(a) de Vendas</option>
+              <option value="analistaMarketing">Analista/Assistente de Marketing</option>
+              <option value="analistaVendas">Analista/Assistente de Vendas</option>
+              <option value="vendedorContas">Vendedor(a) / Executivo(a) de Contas</option>
+              <option value="estudante">Estudante</option>
+              <option value="OC">Outros Cargos</option>
+    
+            </select>
+    
+            <label >Crie uma senha</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="Digite sua senha"
+            />
+            <label >Confirme sua senha</label>
+            <input
+              type="password"
+              name="confirmPassword"
+              placeholder="Confirme sua senha"
+            />
+            <label>Qual o site da sua empresa</label>
+            <input type="radio" name='site' id="site" />
+            <label htmlFor='site'>Meu site é </label>
+            <input
+              type="text"
+              name="site"
+              placeholder="Insira o endereço do seu site"
+            />
+            <input type="radio" name='site' id="site" />
+            <label htmlFor='site'>Ainda não tenho um site  </label>
+    
+            <ul>
+              <li>
+                Ao criar minha conta estou de acordo com os termos de uso do software e política de privacidade.
+              </li>
+              <li>
+                Ao preencher o formulário, concordo em receber comunicações de acordo com meus interesses.
+              </li>
+              <li>
+                *Você pode alterar suas permissões de comunicação a qualquer tempo.
+              </li>
+            </ul>
+            <button>criar minha conta </button>
+          </form>
           </div>
         </div>
       </section> 
@@ -111,12 +136,9 @@
           <div class="section_rd_info">
             <h2 class="section_rd_title">
               Estaremos juntos desde o primeiro passo!
-            </h2>
-            <h2 class="section_rd_title">
-               para seu negócio
-            </h2>
+            </h2>   
             <p class="section_rd_paragraph">
-              Se você ainda não sabe como extrair o máximo das ações digitais, não tem problema. O RD Station Marketing é mais que uma ferramenta, nos importamos com os seus resultados.   
+              Se você ainda não sabe como extrair o máximo das ações digitais, não tem problema. O RD Station Marketing é mais que uma ferramenta, nos importamos com os seus resultados.
             </p>
             <p class="section_rd_paragraph">
               Estaremos com você do planejamento até a prática!

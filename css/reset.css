@@ -131,11 +131,47 @@ table {
 }
 
 :root {
-  --white: #ffffff;
-  --lighterGray: #cfd3d8;
-  --black: #000000;
-  --rdblack: #212429;
   --darkBlue: #0b485b;
   --blueAscent: #19c1ce;
-  --blueHover: #07e5ee;
+  --blueHover: #07e5eb;
+  --highlight-60: #f2bf4e;
+  --highlight-50: #f4ca6d;
+  --black: #000000;
+  --lighterGray-100: #212429;
+  --lighterGray-70: #7e8a98;
+  --lighterGray-60: #97a1ac;
+  --lighterGray: #cfd3d8;
+  --gray-10: #f1f3f5;
+  --white: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--blueHover);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--lighterGray-70);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: var(--blueHover);
+}
+.btn-primary {
+  background-color: var(--white);
+  color: var(--black);
+}
+button {
+  width: 125px;
+  height: 35px;
+  font-size: 0.875rem;
+  color: var(--white);
+  transition: 0.2s;
+  margin-left: 0px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  border-bottom: 4px solid black;
+  background-color: var(--blueHover);
 }
