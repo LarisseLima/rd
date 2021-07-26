@@ -228,7 +228,6 @@ form button:hover{
 .section_img_about_title,
 .section_img_about_title,
 .section_video_about_title,
-.section_mk_title,
 .section_logos_title, .section_cards_title {
   font-weight: 900;
   width: 15em;
@@ -241,7 +240,6 @@ form button:hover{
 }
 
 .section_rd_paragraph,
-.section_mk_paragraph,
 .section_logos_paragraph {
   width: 600px;
   padding-right: 108px;
@@ -284,7 +282,6 @@ form button:hover{
   display: flex;
   flex-direction: column;
   display: flex;
-  /* justify-content: space-between;  */
 }
 
 
@@ -295,13 +292,9 @@ form button:hover{
   font-size: 20px;
 }
 
-/* .section_list_ul{
-  width: 450px;
-} */
 .section_list li {
   padding-top: 30px;
   font-weight: 400;
-  /* width: 450px; */
   font-family: "Nunito", sans-serif;
   font-size: 16px;
 }
@@ -320,6 +313,7 @@ form button:hover{
 }
 
 .card_row {
+  padding-top: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -330,6 +324,7 @@ form button:hover{
   padding: 30px;
   margin: 20px;
   width: 400px;
+  height: 450px;
   transition: all 0.3s ease-out;
 }
 .card_row_info:hover {
@@ -367,19 +362,34 @@ form button:hover{
  
 
 .section_mk {
+  margin-right: 135px;
+  margin-left: 135px;
   background-color: var(--darkBlue);
-  /* padding: 25px 0; */
-  /* position: absolute; */ 
-  width: 1224px;
-  height: 396px;
-  left: 0px;
-  top: 0px;
+  color: var(--white);
+  text-align: center;
 }
 
-.section_mk .container {
-  color: var(--white);
-  display: flex;
-  justify-content: space-between;
+.section_mk_info  {
+  width: 100%;
+  align-items: center;
+  display: flexbox;
+  justify-items: center;
+}
+
+.section_mk_title {
+  padding-top: 20px;
+  font-weight: 900;
+  font-family: "Nunito", sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+.section_mk_paragraph {
+  padding-right: 108px;
+  padding-top: 40px;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .section_mk_button img,
