@@ -41,7 +41,7 @@ Web system created for the Rd Station challenge. A landing page with lots of inf
 
 # :scroll: License
 
-This project is under License [MIT]()
+This project is under License [MIT](https://github.com/LarisseLima/rd/blob/master/LICENSE)
 
 # DEPLOY
 
