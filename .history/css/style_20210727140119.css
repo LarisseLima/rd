@@ -14,10 +14,10 @@ body {
   margin-bottom: 10px;
   width: 20%;
 }
+  
+
 
 .header {
-  margin-left: 25px;
-  margin-right: 25px;
   background-color: var(--white);
   padding: 10px 0;
   display: flex;
@@ -27,6 +27,7 @@ body {
 }
 
 .header ul{
+  margin-right: 25px;
   padding: 20px 10px;
   list-style: none;
   display: flex;
@@ -85,7 +86,9 @@ color: var(--blueHover)
 }
 
 .section_modal {
-  background-image: url(/assets/shape1.svg);
+  /* background-color: var(--lighterGray); */
+  background-image: url(assets/shape1.svg);
+  /* background-position: center top; */
   background-size: cover;
   background-repeat: no-repeat;
   padding: 25px 0;
@@ -109,11 +112,10 @@ color: var(--blueHover)
   justify-content: space-between;
 }
 
+
 form{
-  border-radius: 5px;
-  box-shadow: 7px 7px 13px 7px rgba(50, 50, 50, 0.22);
-  width: 110%;
-  height: 110%;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,7 +123,7 @@ form{
 }
 
 form header{
-  width: 80%;
+  width: 90%;
   display: flex;
   margin-top: 40px;
   padding-bottom: 24px;
@@ -242,7 +244,6 @@ form button:hover{
 }
 
 .section_rd_paragraph,
-.section_logos_paragraph,
 .section_logos_paragraph {
   width: 600px;
   padding-right: 108px;
@@ -264,6 +265,7 @@ form button:hover{
 }
 
 .section_photo {
+  /* background-color: var(--lighterGray); */
   padding: 25px 0;
 }
 
@@ -426,6 +428,7 @@ form button:hover{
 
 
 .section_logos {
+  background-color: var(--lighterGray);
   padding: 25px 0;
 }
 .section_logos_title{

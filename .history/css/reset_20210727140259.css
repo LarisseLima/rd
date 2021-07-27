@@ -157,7 +157,6 @@ table {
   border-radius: 2px;
   background-color: var(--blueHover);
 }
-
 button .btn-primary {
   background-color: var(--white);
   color: var(--black);

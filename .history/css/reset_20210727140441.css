@@ -158,7 +158,7 @@ table {
   background-color: var(--blueHover);
 }
 
-button .btn-primary {
+.button btn-primary {
   background-color: var(--white);
   color: var(--black);
 }
